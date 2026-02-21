@@ -4,6 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas - CamposTur</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* 
+        Azul oceano – #0077B6
+        Azul claro – #90E0EF
+        Areia – #F4E1C1
+        Branco gelo – #F8F9FA
+        Cinza escuro (texto) – #333333
+        */
+        :root{
+            --cor-Azul-oceano: #0077B6;
+            --cor-Azul-claro: #90E0EF;
+            --cor-Areia: #F4E1C1;
+            --cor-Branco-gelo: #F8F9FA;
+            --cor-Cinza-escuro: #333333;
+        }
+        #header-nav{
+            margin: auto 5px;
+            text-align: center;
+            height: 400px;
+            background-color: darkmagenta;
+        }
+        #header-nav > #nav-home{
+            height: 100px;
+        }
+        #header-nav > #banner{
+            height: 400px;
+            background-image: url("https://images.pexels.com/photos/12766014/pexels-photo-12766014.jpeg");
+            background-size: cover; /* cobre toda a tela */
+            background-position: center; /* centraliza */
+            background-repeat: no-repeat; /* não repete */
+        }
+        #header-nav > #banner > #imagem-banner{
+            
+        }
+        #header-nav > #banner > #overlay-banner{
+
+        }
+        #main{
+            
+        }
+    </style>
+
 </head>
 <body>
     <!-- Cabeçalho 
@@ -18,7 +65,7 @@
         </nav>
         <div id="banner">
             <div id="imagem-banner">
-                <img src="" alt="Lugar de Turismo">
+
             </div>
                 <div id="overlay-banner">
                     <h1>Destinos Paradisíacos!</h1>
@@ -38,14 +85,15 @@
             </p>
             <h3>🌍 Destinos em Destaque</h3>
             <!-- trocar esses parágrafo de baixo por uma div e colocar imagens clicáveis com fotos dos lugares -->
-            <p>
-                🌴 Fernando de Noronha <br>
-                🏖️ Porto de Galinhas <br>
-                🏙️ Gramado <br>
-                🗽 Nova York <br>
-                🗼 Paris <br>
-                🏝️ Cancún <br>
-            </p>
+            <div id="imagens-cards">
+                <img src="" alt="Fernando de Noronha">
+                <img src="" alt="Porto de Galinhas">
+                <img src="" alt="Gramado">
+                <img src="" alt="Nova York">
+                <img src="" alt="Paris">
+                <img src="" alt="Paris">
+                <img src="" alt="Cancún">
+            </div>
             <p>
                 Seja para férias, lua de mel, viagem em família ou aventura internacional, cuidamos de cada detalhe:
             </p>
