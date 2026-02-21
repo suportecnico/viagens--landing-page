@@ -24,17 +24,42 @@
             --cor-Branco-gelo: #F8F9FA;
             --cor-Cinza-escuro: #333333;
         }
+        a{
+            text-decoration: none;
+        }
         #header-nav{
             margin: auto 5px;
+            margin-bottom: 105px;
             text-align: center;
-            height: 400px;
-            background-color: darkmagenta;
+            height: 530px;
         }
         #header-nav > #nav-home{
             height: 100px;
+            background-color: darkorange;
+        }
+         #header-nav > #nav-home > #nav-links{
+            background-color: bisque;
+            width: 350px;
+            height: auto;
+            margin:auto;
+            margin-left: 120px;
+            margin-top: -60px;
+
+         }
+        #header-nav > #nav-home > #logo-foto{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+             background-color: #90E0EF;
+
+        }
+        #logo{
+            margin: 5px auto;
+            width: 85%;
+            border-radius: 50% 50%;
         }
         #header-nav > #banner{
-            height: 400px;
+            height: 530px;
             background-image: url("https://images.pexels.com/photos/12766014/pexels-photo-12766014.jpeg");
             background-size: cover; /* cobre toda a tela */
             background-position: center; /* centraliza */
@@ -44,11 +69,20 @@
             
         }
         #header-nav > #banner > #overlay-banner{
-
+            /* background-color: chartreuse; */
+            margin: auto;
+            padding-top: 150px;
+            /* margin-top: 150px; */
         }
         #main{
-            
+            height: auto;
+            background-color: cadetblue;
         }
+        #footer-info{
+            margin-top: 10px;
+            background-color: pink;
+        }
+
     </style>
 
 </head>
@@ -59,9 +93,14 @@
     <header id="header-nav">
 
         <nav id="nav-home">
-            <a href="#MinhaViagem">Minha Viagem</a>
-            <a href="#NosEncontre">Onde nos Encontrar</a>
-            <a href="#Conselhos">Conselhos Úteis</a>
+            <div id="logo-foto">
+                <img src="logo.png" alt="logo" id="logo">
+            </div>
+            <div id="nav-links">
+                <a href="#MinhaViagem">Minha Viagem</a>
+                <a href="#NosEncontre">Onde nos Encontrar</a>
+                <a href="#Conselhos">Conselhos Úteis</a>
+            </div>
         </nav>
         <div id="banner">
             <div id="imagem-banner">
