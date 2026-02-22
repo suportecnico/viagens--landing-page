@@ -37,8 +37,11 @@
             text-transform: uppercase;
             font-weight: bold;
         }
+        p{
+            padding: 10px;
+        }
         .secoes-h2{
-            
+            padding-bottom: 10px;
         }
         #header-nav{
             margin: auto 2px auto 2px;
@@ -105,33 +108,38 @@
             width: 200px;
         }
         #main{
+            display: flex;
+            flex-wrap: wrap;
             margin: auto;
             height: auto;
         }
         #main #MinhaViagem{
             background-color: var(--cor-Branco-gelo);
-            margin: auto 2px auto 2px;
+            margin: auto;
             padding-bottom: 10px;
         }
         #main #NosEncontre{
             background-color: var(--cor-Branco-gelo);
-            margin: auto 2px auto 2px;
+            margin: auto;
             padding-bottom: 20px;
         }
         #main #Conselhos{
             background-color: var(--cor-Branco-gelo);
-            margin: auto 2px auto 2px;
+            margin: auto;
             padding-bottom: 20px;
         }
         #main .cards{
             /* background-color: brown; */
             margin: auto;
-            width: 95vw;
+            text-align: center;
+            width: 98vw;
             border-radius: 7px;
+            align-items: center;
         }
         #main .img-cards{
+            width: 90vw;
             margin: auto;
-            width: 95vw;
+            border-radius: 8px;
         }
         #main .botoes-home{
             display: inline-block;
@@ -180,7 +188,7 @@
         <section id="MinhaViagem">
             <div class="cards">
                 <h2 class="secoes-h2">Minha Viagem</h2>
-                <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="" class="img-cards">
+                <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Minha Viagem" class="img-cards">
             <p>
                 Na CamposTur, cada viagem é pensada para ser única, organizada e inesquecível.
                 <br>
@@ -222,6 +230,7 @@
         <section id="NosEncontre">
             <div class="cards">
                 <h2 class="secoes-h2">Onde nos Encontrar</h2>
+                <img src="https://images.pexels.com/photos/34753/pexels-photo.jpg" alt="Onde nos localizar" class="img-cards">
             <p>
                 A CamposTur está sempre perto de você.
                 <br>
@@ -243,6 +252,7 @@
         <section id="Conselhos">
             <div class="cards">
                 <h2 class="secoes-h2">Conselhos Úteis</h2>
+                <img src="https://images.pexels.com/photos/796603/pexels-photo-796603.jpeg" alt="" class="img-cards">
             <p>
                 Viajar é uma das melhores experiências da vida — mas um bom planejamento faz toda a diferença.
                 <br>
