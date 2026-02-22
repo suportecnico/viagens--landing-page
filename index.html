@@ -6,23 +6,24 @@
     <title>Ofertas - CamposTur</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
         *{
             margin: 0px;
             padding: 0px;
         }
-        /* 
-        Azul oceano – #0077B6
-        Azul claro – #90E0EF
-        Areia – #F4E1C1
-        Branco gelo – #F8F9FA
-        Cinza escuro (texto) – #333333
-        */
+    
         :root{
             --cor-Azul-oceano: #0077B6;
             --cor-Azul-claro: #90E0EF;
             --cor-Areia: #F4E1C1;
             --cor-Branco-gelo: #F8F9FA;
             --cor-Cinza-escuro: #333333;
+            /*  */
+            --font-titulos: "Montserrat", sans-serif;
+            --font-textos: "Open Sans", sans-serif;
+
+
         }
         a{
             text-decoration: none;
@@ -33,29 +34,46 @@
             text-align: center;
             height: 530px;
         }
-        #header-nav > #nav-home{
+        #header-nav #nav-home{
             display: flex;
             align-items: center;
             height: 100px;
-            background-color: darkorange;
+            background-color: var(--cor-Azul-oceano);
         }
-         #header-nav > #nav-home > #nav-links{
+         #header-nav #nav-home #nav-links{
             display: flex;
             justify-content: end;
             margin: auto;
             width: auto;
          }
-         a{
-            background-color: rgb(119, 0, 255);
+         #header-nav  #nav-home  #nav-links .botoes-nav{
+            color: var(--cor-Cinza-escuro);
             margin: 0px 5px;
+            border-bottom: solid black 2px;
+            border-right: solid rgba(0, 0, 0, 0.24) 2px;
             border-radius: 8px;
             padding: 7px;
          }
-        #header-nav > #nav-home > #logo-foto{
+          #header-nav  #nav-home  #nav-links #botao-nav-viagem{
+            background-color: var(--cor-Azul-claro);
+          }
+          #header-nav  #nav-home  #nav-links #botao-nav-contatos{
+            background-color: var(--cor-Areia);
+          }
+          #header-nav  #nav-home  #nav-links #botao-nav-dicas{
+            background-color: var(--cor-Branco-gelo);
+          }
+         #main .botoes-home{
+            display: inline-block;
+            background-color: rgb(119, 0, 255);
+            margin: 10px 5px 0px 5px;
+            border-radius: 8px;
+            padding: 7px;
+         }
+        #header-nav  #nav-home  #logo-foto{
             align-content: center;
             width: 100px;
             height: 100px;
-            background-color: #90E0EF;
 
         }
         #logo{
@@ -64,25 +82,44 @@
             width: 85%;
             border-radius: 50% 50%;
         }
-        #header-nav > #banner{
+        #header-nav #banner{
+            display: flex;
             height: 530px;
             background-image: url("https://images.pexels.com/photos/12766014/pexels-photo-12766014.jpeg");
             background-size: cover; /* cobre toda a tela */
             background-position: center; /* centraliza */
             background-repeat: no-repeat; /* não repete */
         }
-        #header-nav > #banner > #imagem-banner{
+        #header-nav #banner #imagem-banner{
             
         }
-        #header-nav > #banner > #overlay-banner{
-            /* background-color: chartreuse; */
+        #header-nav #banner #overlay-banner{
             margin: auto;
-            padding-top: 150px;
-            /* margin-top: 150px; */
+            padding-bottom: 100px;
+        }
+        hr{
+            margin: auto;
+            width: 200px;
         }
         #main{
             height: auto;
             background-color: cadetblue;
+        }
+        #main #MinhaViagem{
+            background-color: burlywood;
+            margin: 0px 5px;
+            padding-bottom: 10px;
+            
+        }
+        #main #NosEncontre{
+            background-color: rgb(77, 54, 23);
+            margin: 0px 5px;
+            padding-bottom: 20px;
+        }
+        #main #Conselhos{
+            background-color: rgb(153, 95, 19);
+            margin: 0px 5px;
+            padding-bottom: 20px;
         }
         #footer-info{
             margin-top: 10px;
@@ -103,9 +140,9 @@
                 <img src="logo.png" alt="logo" id="logo">
             </div>
             <div id="nav-links">
-                <a href="#MinhaViagem">Minha Viagem</a>
-                <a href="#NosEncontre">Onde nos Encontrar</a>
-                <a href="#Conselhos">Conselhos Úteis</a>
+                <a href="#MinhaViagem" class="botoes-nav" id="botao-nav-viagem">Minha Viagem</a>
+                <a href="#NosEncontre" class="botoes-nav" id="botao-nav-contatos">Onde nos Encontrar</a>
+                <a href="#Conselhos" class="botoes-nav" id="botao-nav-dicas">Conselhos Úteis</a>
             </div>
         </nav>
         <div id="banner">
@@ -115,6 +152,7 @@
                 <div id="overlay-banner">
                     <h1>Destinos Paradisíacos!</h1>
                     <h2>Vamos Viajar?</h2>
+                    <hr>
                 </div>
         </div>
         
@@ -157,7 +195,7 @@
                     🌎 Viva a experiência CamposTur.
                 </p>
             </article>
-            <a href="#nav-home">Home</a>
+            <a href="#nav-home" class="botoes-home">Home</a>
         </section>
         <!--  -->
         <section id="NosEncontre">
@@ -176,7 +214,7 @@
                     CEP: 01000-000
                 </p>
             </article>
-            <a href="#nav-home">Home</a>
+            <a href="#nav-home" class="botoes-home">Home</a>
         </section>
         <!--  -->
         <section id="Conselhos">
@@ -228,9 +266,7 @@
                     Para voos nacionais, recomendamos 2 horas antes. Para internacionais, 3 horas.
                 </p>
             </details>
-            </p>
-            <a href="#nav-home">Home</a>
-
+        </p>
             <article>
                 <h3>Viajar bem é viajar informado</h3>
                 <p>
@@ -243,6 +279,7 @@
                         💙 Viva sua melhor experiência.
                 </p>
             </article>
+            <a href="#nav-home" class="botoes-home">Home</a>
         </section>
     </main>
 
