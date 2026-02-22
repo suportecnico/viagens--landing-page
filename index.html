@@ -41,7 +41,7 @@
             
         }
         #header-nav{
-            margin: auto 3px auto 2px;
+            margin: auto 2px auto 2px;
             margin-bottom: 105px;
             text-align: center;
             height: 100vh;
@@ -49,7 +49,7 @@
         #header-nav #nav-home{
             display: flex;
             align-items: center;
-            height: 100px;
+            height: 105px;
             background-image: linear-gradient(to top, var(--cor-Azul-claro), var(--cor-Azul-oceano));
         }
          #header-nav #nav-home #nav-links{
@@ -105,23 +105,33 @@
             width: 200px;
         }
         #main{
+            margin: auto;
             height: auto;
         }
         #main #MinhaViagem{
             background-color: var(--cor-Branco-gelo);
-            margin: auto 3px auto 2px;
+            margin: auto 2px auto 2px;
             padding-bottom: 10px;
-            
         }
         #main #NosEncontre{
             background-color: var(--cor-Branco-gelo);
-            margin: auto 3px auto 2px;
+            margin: auto 2px auto 2px;
             padding-bottom: 20px;
         }
         #main #Conselhos{
             background-color: var(--cor-Branco-gelo);
-            margin: auto 3px auto 2px;
+            margin: auto 2px auto 2px;
             padding-bottom: 20px;
+        }
+        #main .cards{
+            /* background-color: brown; */
+            margin: auto;
+            width: 95vw;
+            border-radius: 7px;
+        }
+        #main .img-cards{
+            margin: auto;
+            width: 95vw;
         }
         #main .botoes-home{
             display: inline-block;
@@ -168,7 +178,9 @@
      
     <main id="main">
         <section id="MinhaViagem">
-            <h2 class="secoes-h2">Minha Viagem!</h2>
+            <div class="cards">
+                <h2 class="secoes-h2">Minha Viagem</h2>
+                <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="" class="img-cards">
             <p>
                 Na CamposTur, cada viagem é pensada para ser única, organizada e inesquecível.
                 <br>
@@ -195,6 +207,7 @@
                 <li>✔ Seguro viagem</li>
                 <li>✔ Suporte durante toda a jornada</li>
             </ul>
+            </div>
             <article>
                  <h3>Seu único trabalho é aproveitar.</h3>
                 <p>
@@ -207,12 +220,14 @@
         </section>
         <!--  -->
         <section id="NosEncontre">
-            <h2 class="secoes-h2">Onde nos Encontrar</h2>
+            <div class="cards">
+                <h2 class="secoes-h2">Onde nos Encontrar</h2>
             <p>
                 A CamposTur está sempre perto de você.
                 <br>
                 Nossa sede foi planejada para oferecer um atendimento confortável, seguro e personalizado. Aqui, cada cliente é recebido com atenção e cuidado, porque acreditamos que grandes viagens começam com uma boa conversa.
             </p>
+            </div>
             <article>
                 <h3>🏢 Endereço</h3>
                 <p>
@@ -226,7 +241,8 @@
         </section>
         <!--  -->
         <section id="Conselhos">
-            <h2 class="secoes-h2">Conselhos Úteis</h2>
+            <div class="cards">
+                <h2 class="secoes-h2">Conselhos Úteis</h2>
             <p>
                 Viajar é uma das melhores experiências da vida — mas um bom planejamento faz toda a diferença.
                 <br>
@@ -275,6 +291,7 @@
                 </p>
             </details>
         </p>
+            </div>
             <article>
                 <h3>Viajar bem é viajar informado</h3>
                 <p>
