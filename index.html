@@ -20,16 +20,25 @@
             --cor-Branco-gelo: #F8F9FA;
             --cor-Cinza-escuro: #333333;
             /*  */
-            --font-titulos: "Montserrat", sans-serif;
+            --font-geral: "Montserrat", sans-serif;
             --font-textos: "Open Sans", sans-serif;
 
 
         }
         body{
-            background-color: var(--cor-Azul-oceano);
+            background-image: linear-gradient(to top, var(--cor-Branco-gelo), var(--cor-Azul-claro));
+            font-family: var(--font-geral);
         }
         a{
             text-decoration: none;
+        }
+        h1, h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .secoes-h2{
+            
         }
         #header-nav{
             margin: auto 3px auto 2px;
@@ -41,7 +50,7 @@
             display: flex;
             align-items: center;
             height: 100px;
-            background-color: var(--cor-Azul-oceano);
+            background-image: linear-gradient(to top, var(--cor-Azul-claro), var(--cor-Azul-oceano));
         }
          #header-nav #nav-home #nav-links{
             display: flex;
@@ -51,6 +60,7 @@
          }
          #header-nav  #nav-home  #nav-links .botoes-nav{
             color: var(--cor-Cinza-escuro);
+            font-weight: bold;
             margin: 0px 5px;
             border-bottom: solid black 2px;
             border-right: solid rgba(0, 0, 0, 0.24) 2px;
@@ -70,7 +80,6 @@
             align-content: center;
             width: 100px;
             height: 100px;
-
         }
         #logo{
             margin: auto;
@@ -88,7 +97,8 @@
         }
         #header-nav #banner #overlay-banner{
             margin: auto;
-            padding-bottom: 100px;
+            padding-bottom: 200px;
+            color: var(--cor-Branco-gelo);
         }
         hr{
             margin: auto;
@@ -99,31 +109,32 @@
         }
         #main #MinhaViagem{
             background-color: var(--cor-Branco-gelo);
-            margin: 0px 5px;
+            margin: auto 3px auto 2px;
             padding-bottom: 10px;
             
         }
         #main #NosEncontre{
             background-color: var(--cor-Branco-gelo);
-            margin: 0px 5px;
+            margin: auto 3px auto 2px;
             padding-bottom: 20px;
         }
         #main #Conselhos{
             background-color: var(--cor-Branco-gelo);
-            margin: 0px 5px;
+            margin: auto 3px auto 2px;
             padding-bottom: 20px;
         }
         #main .botoes-home{
             display: inline-block;
             background-color: var(--cor-Azul-oceano);
-            color: var(--cor-Cinza-escuro);
+            color: var(--cor-Branco-gelo);
+            font-weight: bold;
             margin: 10px 5px 0px 5px;
             border-radius: 8px;
             padding: 7px;
          }
         #footer-info{
             margin-top: 10px;
-            background-color: pink;
+            background-image: linear-gradient(to top, var(--cor-Branco-gelo), var(--cor-Azul-claro));
         }
 
     </style>
@@ -157,7 +168,7 @@
      
     <main id="main">
         <section id="MinhaViagem">
-            <h2>Minha Viagem!</h2>
+            <h2 class="secoes-h2">Minha Viagem!</h2>
             <p>
                 Na CamposTur, cada viagem é pensada para ser única, organizada e inesquecível.
                 <br>
@@ -196,7 +207,7 @@
         </section>
         <!--  -->
         <section id="NosEncontre">
-            <h2>Onde nos Encontrar</h2>
+            <h2 class="secoes-h2">Onde nos Encontrar</h2>
             <p>
                 A CamposTur está sempre perto de você.
                 <br>
@@ -215,7 +226,7 @@
         </section>
         <!--  -->
         <section id="Conselhos">
-            <h2>Conselhos Úteis</h2>
+            <h2 class="secoes-h2">Conselhos Úteis</h2>
             <p>
                 Viajar é uma das melhores experiências da vida — mas um bom planejamento faz toda a diferença.
                 <br>
