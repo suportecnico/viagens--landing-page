@@ -25,14 +25,17 @@
 
 
         }
+        body{
+            background-color: var(--cor-Azul-oceano);
+        }
         a{
             text-decoration: none;
         }
         #header-nav{
-            margin: auto 5px auto 4px;
+            margin: auto 3px auto 2px;
             margin-bottom: 105px;
             text-align: center;
-            height: 530px;
+            height: 100vh;
         }
         #header-nav #nav-home{
             display: flex;
@@ -63,13 +66,6 @@
           #header-nav  #nav-home  #nav-links #botao-nav-dicas{
             background-color: var(--cor-Branco-gelo);
           }
-         #main .botoes-home{
-            display: inline-block;
-            background-color: rgb(119, 0, 255);
-            margin: 10px 5px 0px 5px;
-            border-radius: 8px;
-            padding: 7px;
-         }
         #header-nav  #nav-home  #logo-foto{
             align-content: center;
             width: 100px;
@@ -84,14 +80,11 @@
         }
         #header-nav #banner{
             display: flex;
-            height: 530px;
+            height: 100%;
             background-image: url("https://images.pexels.com/photos/12766014/pexels-photo-12766014.jpeg");
             background-size: cover; /* cobre toda a tela */
             background-position: center; /* centraliza */
             background-repeat: no-repeat; /* não repete */
-        }
-        #header-nav #banner #imagem-banner{
-            
         }
         #header-nav #banner #overlay-banner{
             margin: auto;
@@ -103,24 +96,31 @@
         }
         #main{
             height: auto;
-            background-color: cadetblue;
         }
         #main #MinhaViagem{
-            background-color: burlywood;
+            background-color: var(--cor-Branco-gelo);
             margin: 0px 5px;
             padding-bottom: 10px;
             
         }
         #main #NosEncontre{
-            background-color: rgb(77, 54, 23);
+            background-color: var(--cor-Branco-gelo);
             margin: 0px 5px;
             padding-bottom: 20px;
         }
         #main #Conselhos{
-            background-color: rgb(153, 95, 19);
+            background-color: var(--cor-Branco-gelo);
             margin: 0px 5px;
             padding-bottom: 20px;
         }
+        #main .botoes-home{
+            display: inline-block;
+            background-color: var(--cor-Azul-oceano);
+            color: var(--cor-Cinza-escuro);
+            margin: 10px 5px 0px 5px;
+            border-radius: 8px;
+            padding: 7px;
+         }
         #footer-info{
             margin-top: 10px;
             background-color: pink;
@@ -146,9 +146,6 @@
             </div>
         </nav>
         <div id="banner">
-            <div id="imagem-banner">
-
-            </div>
                 <div id="overlay-banner">
                     <h1>Destinos Paradisíacos!</h1>
                     <h2>Vamos Viajar?</h2>
