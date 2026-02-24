@@ -107,6 +107,7 @@
             flex-wrap: wrap;
             margin: auto;
             height: auto;
+            background-color: white;
         }
         #main #MinhaViagem{
             background-color: var(--cor-Branco-gelo);
@@ -124,17 +125,38 @@
             padding-bottom: 20px;
         }
         #main .cards{
-            /* background-color: brown; */
+            background-color: white;
             margin: auto;
             text-align: center;
-            width: 98vw;
+            width: 90vw;
             border-radius: 7px;
             align-items: center;
+        }
+        #main .cards-conteudos{
+            text-align: start;
         }
         #main .img-cards{
             width: 90vw;
             margin: auto;
             border-radius: 8px;
+        }
+        #main .cards .cards-conteudos #imagens-cards-minha-viagem{
+            display: flex;
+            margin: auto;
+            width: 90vw;
+        }
+        #main .cards .cards-conteudos #imagens-cards{
+            width: 90vw;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: var(--cor-Branco-gelo);
+        }
+        #main .cards .cards-conteudos .imagens-cards-destinos{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 50% 50%;
         }
         #main .botoes-home{
             display: inline-block;
@@ -181,25 +203,32 @@
      
     <main id="main">
         <section id="MinhaViagem">
+            <h2 class="secoes-h2">Minha Viagem</h2>
             <div class="cards">
-                <h2 class="secoes-h2">Minha Viagem</h2>
                 <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Minha Viagem" class="img-cards">
-            <p>
+                <div class="cards-conteudos">
+                    <p>
                 Na CamposTur, cada viagem é pensada para ser única, organizada e inesquecível.
                 <br>
                 Criamos roteiros personalizados para você aproveitar o melhor de cada destino, com conforto, segurança e suporte completo.
             </p>
             <h3>🌍 Destinos em Destaque</h3>
             <!-- trocar esses parágrafo de baixo por uma div e colocar imagens clicáveis com fotos dos lugares -->
-            <div id="imagens-cards">
-                <img src="" alt="Fernando de Noronha">
-                <img src="" alt="Porto de Galinhas">
-                <img src="" alt="Gramado">
-                <img src="" alt="Nova York">
-                <img src="" alt="Paris">
-                <img src="" alt="Paris">
-                <img src="" alt="Cancún">
+             <div id="imagens-cards-minha-viagem">
+                <div id="imagens-cards">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-fernando-de-noronha-capa2019-02.jpg" alt="Fernando de Noronha" class="imagens-cards-destinos">
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShtbpIXGQVYQ9NHkNeEO1F5IIZngEEDvhUrA&s" alt="Porto de Galinhas" class="imagens-cards-destinos" >
+                <img src="https://minimundo.com.br/wp-content/uploads/2024/07/Gramado-1024x774.jpg" alt="Gramado" class="imagens-cards-destinos">
+                <img src="https://forbes.com.br/wp-content/uploads/2019/09/abre_lifestyle_Nova-York_200919_GettyImages.jpg" alt="Nova York" class="imagens-cards-destinos">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg" alt="Paris" class="imagens-cards-destinos">
+                <img src="https://vempravegas.com.br/wp-content/uploads/2019/06/grand-canyon-skywalk-4.jpg" alt="Grand Canyon" class="imagens-cards-destinos">
+                <img src="https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt8fbf6273140a0c26/67e66f166d13e70e8e36ed8d/iStock-1342110118-Header_Mobile.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart" alt="Cancún" class="imagens-cards-destinos">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01-820x430.jpg" alt="Rio de Janeiro" class="imagens-cards-destinos">
+
+                </div>
             </div>
+            
             <p>
                 Seja para férias, lua de mel, viagem em família ou aventura internacional, cuidamos de cada detalhe:
             </p>
@@ -210,6 +239,7 @@
                 <li>✔ Seguro viagem</li>
                 <li>✔ Suporte durante toda a jornada</li>
             </ul>
+                </div>
             </div>
             <article>
                  <h3>Seu único trabalho é aproveitar.</h3>
@@ -223,8 +253,8 @@
         </section>
         <!--  -->
         <section id="NosEncontre">
+            <h2 class="secoes-h2">Onde nos Encontrar</h2>
             <div class="cards">
-                <h2 class="secoes-h2">Onde nos Encontrar</h2>
                 <img src="https://images.pexels.com/photos/34753/pexels-photo.jpg" alt="Onde nos localizar" class="img-cards">
             <p>
                 A CamposTur está sempre perto de você.
@@ -245,8 +275,8 @@
         </section>
         <!--  -->
         <section id="Conselhos">
+            <h2 class="secoes-h2">Conselhos Úteis</h2>
             <div class="cards">
-                <h2 class="secoes-h2">Conselhos Úteis</h2>
                 <img src="https://images.pexels.com/photos/796603/pexels-photo-796603.jpeg" alt="" class="img-cards">
             <p>
                 Viajar é uma das melhores experiências da vida — mas um bom planejamento faz toda a diferença.
