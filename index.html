@@ -52,6 +52,14 @@
         span{
             font-weight: bold;
         }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            margin-left: 5px;
+            padding: 5px;
+            font-weight: bold;
+        }
         .secoes-h2{
             padding-top: 20px;
             padding-bottom: 10px;
@@ -139,11 +147,13 @@
             background-color: var(--cor-Branco-gelo);
             margin: auto;
             padding-bottom: 10px;
+            border-radius: 8px;
         }
         #main #NosEncontre{
             background-color: var(--cor-Azul-oceano);
             margin: auto;
             padding-bottom: 20px;
+            border-radius: 8px;
         }
         #main #NosEncontre #card-contato{
             background-image: linear-gradient(to top, var(--cor-Azul-oceano), var(--cor-Azul-claro));
@@ -153,6 +163,10 @@
             background-color: var(--cor-Branco-gelo);
             margin: auto;
             padding-bottom: 20px;
+            border-radius: 8px;
+        }
+        #main #Conselhos #card-conselhos{
+            background-color: var(--cor-Branco-gelo);
         }
         #main .cards{
             background-color: var(--cor-Branco-gelo);
@@ -303,9 +317,7 @@
                 <img src="https://images.pexels.com/photos/34753/pexels-photo.jpg" alt="Onde nos localizar" class="img-cards">
                 <div class="cards-conteudos">
                     <p>
-                        A CamposTur está sempre perto de você.
-                        <br>
-                        Nossa sede foi planejada para oferecer um atendimento confortável, seguro e personalizado. Aqui, cada cliente é recebido com atenção e cuidado, porque acreditamos que grandes viagens começam com uma boa conversa.
+                        Nossa sede foi planejada para oferecer um atendimento confortável, seguro e personalizado.
                     </p>
                     <h3>🏢 Contato</h3>
 
@@ -333,77 +345,33 @@
         <!--  -->
         <section id="Conselhos">
             <h2 class="secoes-h2">Conselhos Úteis</h2>
-            <div class="cards">
+            <div id="card-conselhos" class="cards">
                 <img src="https://images.pexels.com/photos/796603/pexels-photo-796603.jpeg" alt="" class="img-cards">
-            <p>
+            <div class="cards-conteudos">
+                <p>
                 Viajar é uma das melhores experiências da vida — mas um bom planejamento faz toda a diferença.
-                <br>
-                A CamposTur separou algumas orientações importantes para que sua viagem seja tranquila, segura e inesquecível:
             </p>
-            <details>
-                <summary>📄 Documentação</summary>
-                <p>
-                    Verifique com antecedência a validade do seu RG ou passaporte. Alguns destinos exigem visto ou vacinas específicas.
-                </p>
-            </details>
-
-            <details>
-                <summary>💳 Organização Financeira</summary>
-                <p>
-                    Planeje seus gastos, informe seu banco sobre a viagem internacional e leve sempre uma alternativa de pagamento.
-                </p>
-            </details>
-
-            <details>
-                <summary> 🧳 Bagagem Inteligente
-</summary>
-                <p>
-                    Leve apenas o essencial. Confira as regras da companhia aérea sobre peso e itens permitidos.
-                </p>
-            </details>
-
-            <details>
-                <summary>🏥 Seguro Viagem</summary>
-                <p>
-                    Indispensável para viagens internacionais. Garante assistência médica e suporte em imprevistos.
-                </p>
-            </details>
-
-            <details>
-                <summary>📱 Contatos Importantes</summary>
-                <p>
-                    Salve números da agência, do hotel e da companhia aérea. Segurança nunca é demais.
-                </p>
-            </details>
-
-            <details>
-                <summary>⏰ Chegue com Antecedência</summary>
-                <p>
-                    Para voos nacionais, recomendamos 2 horas antes. Para internacionais, 3 horas.
-                </p>
-            </details>
-        </p>
-            </div>
-            <article>
-                <h3>Viajar bem é viajar informado</h3>
+                <ul>
+                    <li>Documentação&#128196;</li>
+                    <li>Organização Financeira&#128179;</li>
+                    <li>Bagagem Inteligente&#129523;</li>
+                    <li>Seguro Viagem&#127973;</li>
+                    <li>Contatos Importantes&#128241;</li>
+                    <li>Chegue com Antecedência&#9200;</li>
+                </ul>
+                 <h3>Viajar bem é viajar informado</h3>
                 <p>
                         A CamposTur está ao seu lado em cada etapa da jornada, oferecendo suporte e orientação sempre que você precisar.
-                    <br>
-                        ✈️ Planeje.
-                    <br>
-                        🌴 Aproveite.
-                    <br>
-                        💙 Viva sua melhor experiência.
                 </p>
-            </article>
+            </div>
+        </div>
             <a href="#nav-home" class="botoes-home">Home</a>
         </section>
     </main>
 
       <!-- Rodapé -->
     <footer id="footer-info">
-        
-        <div id="midias-socias">...</div>
+        <p>Desenvolvido por <a href="">Filisberto Campos</a> &#128279;</p>
     </footer>
 
 </body>
