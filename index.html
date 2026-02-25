@@ -140,6 +140,7 @@
             width: 90vw;
             margin: auto;
             border-radius: 8px;
+
         }
         #main .cards .cards-conteudos #imagens-cards-minha-viagem{
             display: flex;
@@ -153,12 +154,24 @@
             flex-wrap: wrap;
             background-color: var(--cor-Branco-gelo);
         }
+        #main .cards .cards-conteudos .imagens-cards-viagens{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            background-color: antiquewhite;
+            border: solid;
+
+        }
         #main .cards .cards-conteudos .imagens-cards-destinos{
             width: 100px;
             height: 100px;
             margin: 10px;
             border-radius: 50% 50%;
         }
+        
         #main .botoes-home{
             display: inline-block;
             background-color: var(--cor-Azul-oceano);
@@ -217,15 +230,30 @@
             <!-- trocar esses parágrafo de baixo por uma div e colocar imagens clicáveis com fotos dos lugares -->
              <div id="imagens-cards-minha-viagem">
                 <div id="imagens-cards">
-                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-fernando-de-noronha-capa2019-02.jpg" alt="Fernando de Noronha" class="imagens-cards-destinos">
-                
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShtbpIXGQVYQ9NHkNeEO1F5IIZngEEDvhUrA&s" alt="Porto de Galinhas" class="imagens-cards-destinos" >
-                <img src="https://minimundo.com.br/wp-content/uploads/2024/07/Gramado-1024x774.jpg" alt="Gramado" class="imagens-cards-destinos">
-                <img src="https://forbes.com.br/wp-content/uploads/2019/09/abre_lifestyle_Nova-York_200919_GettyImages.jpg" alt="Nova York" class="imagens-cards-destinos">
-                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg" alt="Paris" class="imagens-cards-destinos">
-                <img src="https://vempravegas.com.br/wp-content/uploads/2019/06/grand-canyon-skywalk-4.jpg" alt="Grand Canyon" class="imagens-cards-destinos">
-                <img src="https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt8fbf6273140a0c26/67e66f166d13e70e8e36ed8d/iStock-1342110118-Header_Mobile.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart" alt="Cancún" class="imagens-cards-destinos">
-                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01-820x430.jpg" alt="Rio de Janeiro" class="imagens-cards-destinos">
+                <div class="imagens-cards-viagens">
+                    <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-fernando-de-noronha-capa2019-02.jpg" alt="Fernando de Noronha" class="imagens-cards-destinos">
+                    <span>Fernando de Noronha</span>
+                </div>
+                <div class="imagens-cards-viagens">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShtbpIXGQVYQ9NHkNeEO1F5IIZngEEDvhUrA&s" alt="Porto de Galinhas" class="imagens-cards-destinos" >
+                    <span>Porto de Galinhas</span>
+                </div>
+                <div class="imagens-cards-viagens">
+                    <img src="https://minimundo.com.br/wp-content/uploads/2024/07/Gramado-1024x774.jpg" alt="Gramado" class="imagens-cards-destinos">
+                    <span>Gramado</span>
+                </div>
+                <div class="imagens-cards-viagens">
+                     <img src="https://forbes.com.br/wp-content/uploads/2019/09/abre_lifestyle_Nova-York_200919_GettyImages.jpg" alt="Nova York" class="imagens-cards-destinos">
+                    <span>Nova York</span>
+                </div>
+                <div class="imagens-cards-viagens">
+                    <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg" alt="Paris" class="imagens-cards-destinos">
+                    <span>Paris</span>
+                </div>
+                <div class="imagens-cards-viagens">
+                    <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01-820x430.jpg" alt="Rio de Janeiro" class="imagens-cards-destinos">
+                    <span>Rio de Janeiro</span>
+                </div>
 
                 </div>
             </div>
