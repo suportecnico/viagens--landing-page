@@ -41,6 +41,11 @@
             padding-top: 20px;
             padding-bottom: 20px;
         }
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-left: 10px;
+        }
         p{
             padding: 10px;
         }
@@ -80,9 +85,20 @@
             border-radius: 8px;
             padding: 7px;
          }
+         #header-nav  #nav-home  #nav-links #botao-nav-dicas{
+            margin-right: 10px;
+         }
          #header-nav  #nav-home  #nav-links .botoes-nav:hover{
              background-color: var(--cor-Azul-claro);
              color: var(--cor-Cinza-escuro);
+         }
+         #header-nav  #nav-home  #nav-links #botao-nav-contatos:hover{
+            background-color: var(--cor-Areia);
+            color: var(--cor-Cinza-escuro);
+         }
+         #header-nav  #nav-home  #nav-links #botao-nav-dicas:hover{
+            background-color: var(--cor-Branco-gelo);
+            color: var(--cor-Cinza-escuro);
          }
         #header-nav  #nav-home  #logo-foto{
             align-content: center;
@@ -125,9 +141,13 @@
             padding-bottom: 10px;
         }
         #main #NosEncontre{
-            background-color: var(--cor-Branco-gelo);
+            background-color: var(--cor-Azul-oceano);
             margin: auto;
             padding-bottom: 20px;
+        }
+        #main #NosEncontre #card-contato{
+            background-image: linear-gradient(to top, var(--cor-Azul-oceano), var(--cor-Azul-claro));
+            color: var(--cor-Branco-gelo);
         }
         #main #Conselhos{
             background-color: var(--cor-Branco-gelo);
@@ -177,7 +197,6 @@
             margin: 10px;
             border-radius: 50% 50%;
         }
-        
         #main .botoes-home{
             display: inline-block;
             background-color: var(--cor-Azul-oceano);
@@ -191,7 +210,14 @@
             background-color: var(--cor-Azul-claro);
             color: var(--cor-Cinza-escuro);
          }
-
+         #main #botao-home-contato{
+            background-color: var(--cor-Branco-gelo);
+            color: var(--cor-Azul-oceano);
+         }
+         #main #botao-home-contato:hover{
+            background-color: var(--cor-Areia);
+            color: var(--cor-Cinza-escuro);
+         }
         #footer-info{
             margin-top: 10px;
             background-image: linear-gradient(to top, var(--cor-Branco-gelo), var(--cor-Azul-claro));
@@ -208,7 +234,7 @@
 
         <nav id="nav-home">
             <div id="logo-foto">
-                <img src="logo.png" alt="logo" id="logo">
+                <img src="download.png" alt="logo" id="logo">
             </div>
             <div id="nav-links">
                 <a href="#MinhaViagem" class="botoes-nav" id="botao-nav-viagem">Minha Viagem</a>
@@ -233,8 +259,8 @@
                 <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg" alt="Minha Viagem" class="img-cards">
                 <div class="cards-conteudos">
                     <p>
-                Na CamposTur, cada viagem é pensada para ser única, organizada e inesquecível.
-            </p>
+                        Na CamposTur, cada viagem é pensada para ser única, organizada e inesquecível.
+                    </p>
             <h3>🌍 Destinos em Destaque</h3>
             <!-- trocar esses parágrafo de baixo por uma div e colocar imagens clicáveis com fotos dos lugares -->
              <div id="imagens-cards-minha-viagem">
@@ -273,24 +299,36 @@
         <!--  -->
         <section id="NosEncontre">
             <h2 class="secoes-h2">Onde nos Encontrar</h2>
-            <div class="cards">
+            <div id="card-contato" class="cards">
                 <img src="https://images.pexels.com/photos/34753/pexels-photo.jpg" alt="Onde nos localizar" class="img-cards">
-            <p>
-                A CamposTur está sempre perto de você.
-                <br>
-                Nossa sede foi planejada para oferecer um atendimento confortável, seguro e personalizado. Aqui, cada cliente é recebido com atenção e cuidado, porque acreditamos que grandes viagens começam com uma boa conversa.
-            </p>
+                <div class="cards-conteudos">
+                    <p>
+                        A CamposTur está sempre perto de você.
+                        <br>
+                        Nossa sede foi planejada para oferecer um atendimento confortável, seguro e personalizado. Aqui, cada cliente é recebido com atenção e cuidado, porque acreditamos que grandes viagens começam com uma boa conversa.
+                    </p>
+                    <h3>🏢 Contato</h3>
+
+                        <h4>&#128222; Fale Conosco</h4>
+                        <p>Telefone: (99) 9999-9999</p>
+
+                        <h4>&#128241; WhatsApp</h4>
+                        <p>WhatsApp: (99) 9 9999-9999</p>
+
+                        <h4>&#128231; E-mail</h4>
+                        <p>
+                            contato@campostur.com.br
+                        </p>
+
+                        <h4>&#128205; Endereço</h4>
+                        <p>
+                            Av. das Descobertas, 1234 – Sala 05
+                            Centro – São Paulo – SP
+                            CEP: 01000-000
+                        </p>
+                </div>
             </div>
-            <article>
-                <h3>🏢 Endereço</h3>
-                <p>
-                    CamposTur Agência de Viagens
-                    Av. das Descobertas, 1234 – Sala 05
-                    Centro – São Paulo – SP
-                    CEP: 01000-000
-                </p>
-            </article>
-            <a href="#nav-home" class="botoes-home">Home</a>
+            <a href="#nav-home" class="botoes-home" id="botao-home-contato">Home</a>
         </section>
         <!--  -->
         <section id="Conselhos">
@@ -364,14 +402,7 @@
 
       <!-- Rodapé -->
     <footer id="footer-info">
-        <div id="contato">
-            <h4>📞 Fale Conosco</h4>
-            <p>Telefone: (99) 9999-9999</p>
-        </div>
-        <div id="whatsapp">
-            <h4>🟢WhatsApp</h4>
-            <p>WhatsApp: (99) 9 9999-9999</p>
-        </div>
+        
         <div id="midias-socias">...</div>
     </footer>
 
